@@ -1,0 +1,97 @@
+// responsive-variable
+$ipad-landscape: "(min-width: 992px) and (max-width: 1199px)";
+$ipad-portrait: "(min-width: 768px) and (max-width: 991px)";
+$mobile: "(max-width: 767px)";
+// color-variable
+$title-color:#283593;
+// responsive-variable
+
+mat-card{
+    text-align: center;
+    img{
+        max-width: 100%;
+    }
+    h2{
+        color:$title-color;
+        font-size:20px;
+        a{
+            color:$title-color;
+        }
+    }
+}
+
+
+/* Structure */
+.example-container {
+    position: relative;
+    min-height: 200px;
+  }
+  
+  .example-table-container {
+    position: relative;
+    max-height: 400px;
+    overflow: auto;
+  }
+  
+  table {
+    width: 100%;
+  }
+  
+  .example-loading-shade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 56px;
+    right: 0;
+    background: rgba(0, 0, 0, 0.15);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .example-rate-limit-reached {
+    color: #980000;
+    max-width: 360px;
+    text-align: center;
+  }
+  
+  /* Column Widths */
+  .mat-column-number,
+  .mat-column-state {
+    max-width: 64px;
+  }
+  
+  .mat-column-created {
+    max-width: 124px;
+  }
+  
+
+  table {
+    width: 100%;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+
+//ipad (min-width: 992px) and (max-width: 1199px) view//
+@media #{$ipad-landscape} {
+
+}
+
+//ipad (min-width: 768px) and (max-width: 991px) view//
+@media #{$ipad-portrait} {
+
+}
+
+// max-width: 767px view //
+@media #{$mobile} {
+    mat-card{
+        padding: 7px;
+        h2{
+            font-size:16px;
+        }
+    }
+}

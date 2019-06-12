@@ -1,0 +1,42 @@
+
+        <mat-sidenav-container fullscreen>
+          <mat-sidenav #sidenav>
+            <mat-nav-list>
+              <a mat-list-item  routerLink="/post"  routerLinkActive="mat-accent">
+                <span mat-line>Post</span>
+              </a>
+
+              <a mat-list-item routerLink="/home" routerLinkActive="mat-accent">
+                <span mat-line>home</span>
+              </a>
+              <a mat-list-item routerLink="/login" routerLinkActive="mat-accent">
+                  <span mat-line>Login</span>
+                </a>
+            </mat-nav-list>
+          </mat-sidenav>
+          <mat-toolbar color="primary">
+            <div class="right" fxLayout="row" fxShow="false" fxShow.gt-sm>
+              <a mat-button routerLink="/home"  routerLinkActive="mat-accent">
+                <span mat-line>Home</span>
+              </a>
+            </div>
+            <div class="right" fxLayout="row" fxShow="false" fxShow.gt-sm>
+                <a mat-button routerLink="/about"  routerLinkActive="mat-accent">
+                  <span mat-line>Documentation</span>
+                </a>
+
+              </div>
+
+            <span class="blank-grow"></span>
+            <div class="right" fxLayout="row" fxShow="false" fxShow.gt-sm>
+
+              <a mat-button routerLink="/settings" routerLinkActive="mat-accent">
+                  <span mat-line>Login</span>
+                </a>
+            </div>
+          </mat-toolbar>
+        </mat-sidenav-container>
+
+
+
+

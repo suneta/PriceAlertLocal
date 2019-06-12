@@ -1,0 +1,43 @@
+// responsive-variable
+$ipad-landscape: "(min-width: 992px) and (max-width: 1199px)";
+$ipad-portrait: "(min-width: 768px) and (max-width: 991px)";
+$mobile: "(max-width: 767px)";
+// color-variable
+$title-color:#283593;
+// responsive-variable
+
+mat-card{
+    text-align: center;
+    img{
+        max-width: 100%;
+    }
+    h2{
+        color:$title-color;
+        font-size:20px;
+        a{
+            color:$title-color;
+        }
+    }
+}
+
+
+
+//ipad (min-width: 992px) and (max-width: 1199px) view//
+@media #{$ipad-landscape} {
+
+}
+
+//ipad (min-width: 768px) and (max-width: 991px) view//
+@media #{$ipad-portrait} {
+
+}
+
+// max-width: 767px view //
+@media #{$mobile} {
+    mat-card{
+        padding: 7px;
+        h2{
+            font-size:16px;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+$th-bg-color:#293891;
+$white-color:#ffffff;
+/* Structure */
+table {
+    width: 100%;
+    //  th.mat-header-cell, td.mat-cell
+    th{
+        background:$th-bg-color;
+        color:$white-color;
+        border-right:1px solid rgba(255, 255, 255, 0.8);
+        text-align: center;
+        border-radius: 0;
+    }
+    td{
+        border-right:1px solid rgba(0, 0, 0, 0.12);
+    }
+  }
+
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+
+.filter-section{
+    input {
+        margin-bottom: 0px;
+        border-bottom: none;
+    }
+}

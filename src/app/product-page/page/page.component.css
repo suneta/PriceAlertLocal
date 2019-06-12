@@ -1,0 +1,103 @@
+.mat-form-field {
+  font-size: 14px;
+  padding-right: 15px;
+}
+
+.ProductBrand {
+    font-size: 50px;
+}
+.ProductName {
+    font-size: 30px;
+    color: gray;
+}   
+
+.align-left {
+    width: 100%; display: flex; align-items: flex-start;
+}
+
+
+.TechCard {
+  max-width: 250px;
+  margin-top: 30px;
+}
+
+.partNumberInput {
+  padding-bottom: 0px;
+  padding-top: 10px;
+}
+
+.TechCard2 {
+  width: 225px;
+  margin-top: 30px;
+
+}
+
+.techTable {
+    width: 90%;
+    margin-left: 10px;
+    
+}
+
+.SizeName {
+    font-size: 18px;
+    color: gray;
+    text-align: center;
+} 
+
+.LastUpdated {
+    font-size: 12px;
+    color: gray;
+    text-align: center;
+}
+
+.dateDisplay {
+    font-size: 15px;
+    color: gray;
+    text-align: center;
+}
+
+.sizeIconTable {
+    width: 100%;
+}
+
+.sizeIconCell {
+    text-align: center;
+    color: grey;
+    width: 30px;
+}
+
+.oemarking {
+    width:250px;
+}
+
+.socialPercent {
+    font-size: 35px;
+    color: gray;
+    text-align: center;
+}
+
+.socialLabel {
+    font-size: 17px;
+    color: gray;
+    text-align: center;
+}
+
+.performancecell {
+    font-size: 15px;
+    color: gray;
+    text-align: right;
+    width: 40px;
+    padding-right: 5px;
+}
+
+.cell {
+    text-align: center;
+    border: 1px solid;
+    border-color: lightgrey;
+    color: grey;
+}
+
+.cellName {
+    border: 1px solid lightgrey;
+    color: grey;
+}

@@ -1,0 +1,24 @@
+<div [class]="'theme-wrapper ' + (theme$ | async)">
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav mode="push">
+      <div class="branding"><img [src]="logo" />
+        <span data-testid="title">{{ 'anms.title.short' | translate}}</span></div>
+      <mat-nav-list>
+        <a mat-list-item *ngFor="let item of navigationSideMenu" (click)="sidenav.close()" [routerLink]="[item.link]"
+          routerLinkActive="active">
+          {{item.label | translate}}
+        </a>
+        <a mat-list-item href="https://github.com/tomastrajan/angular-ngrx-material-starter" target="_blank">
+          Github
+        </a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <div class="wrapper">
+      <anms-header></anms-header>
+      <div class="content" [@routeAnimations]="o.isActivated && o.activatedRoute.routeConfig.path">
+        <router-outlet #o="outlet"></router-outlet>
+      </div>
+      <anms-footer></anms-footer>
+    </div>
+  </mat-sidenav-container>
+</div>
